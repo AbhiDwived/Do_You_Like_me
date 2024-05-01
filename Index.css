@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #67bdfb;
+    /* Soft pink */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ff6699;
+    /* Pink */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4d94;
+    /* Darker pink on hover */
+}
+
+#yesBtn {
+    margin-left: -100px;
+    margin-right: 30px;
+}
+
+#noBtn {
+    position: absolute;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+        /* Add padding to body */
+    }
+
+    .container {
+        width: 90%;
+        /* Adjust container width */
+    }
+
+    button {
+        font-size: 16px;
+        /* Reduce button font size */
+        padding: 10px 20px;
+        /* Adjust button padding */
+    }
+
+    #noBtn {
+        position: static;
+        /* Remove absolute positioning */
+        margin-top: 10px;
+        /* Add margin */
+    }
+}

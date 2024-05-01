@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do You Love Me?</title>
+  <link rel="stylesheet" href="Love.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Do You Love Me?</h1>
+    <div class="options">
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+  </div>
+
+  <script>
+    const yesButton = document.getElementById("yesBtn");
+
+    yesButton.addEventListener("click", () => {
+      const confirmation = confirm("Love you 2");
+      if (confirmation) {
+        window.location.href = "index.html";
+      }
+    });
+
+    const noButton = document.getElementById("noBtn");
+
+    noButton.addEventListener("click", () => {
+      // Do nothing, stay on the same page
+    });
+  </script>
+</body>
+</html>
